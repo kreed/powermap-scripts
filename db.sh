@@ -1,0 +1,3 @@
+#!/bin/sh
+rm -f tpit.db
+sqlite3 -line tpit.db 'create table tpit (id text,title text,description text,comments text,from_bus text,to_bus text,status text,associated_projects text,transmission_owner text,contact text,transmission_owner_project_id text,projected_in_service text,actual_in_service text,voltage text,circuit_miles_new text,circuit_miles_upgrade text,autotransformer text,compensation text,county_start text,county_end text,planning_tier text,rpg_submit_date text,rpg_complete_date text,bod_date text,sswg_bus_num text,sswg_included text,interface text,additional_info text,other text,phase_number text,mod_project text,sheet_date integer,sheet_status text)'
