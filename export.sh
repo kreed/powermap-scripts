@@ -5,4 +5,5 @@ sqlite3 tpit.db <<!
 .output out.csv
 select * from tpit ORDER BY CASE WHEN sheet_status='Complete' THEN 0 WHEN sheet_status='Future' THEN 1 WHEN sheet_status='Cancelled' THEN 2 END, projected_in_service;
 !
-./node_modules/.bin/csvtojson out.csv > tpit.json
+echo -n 'var tpit_projects = ' > tpit.js
+./node_modules/.bin/csvtojson out.csv >> tpit.js
