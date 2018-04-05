@@ -10,4 +10,4 @@ WHERE t2.id IS NULL AND t1.id != ""
 ORDER BY CASE WHEN t1.sheet_status='Complete' THEN 0 WHEN t1.sheet_status='Future' THEN 1 WHEN t1.sheet_status='Cancelled' THEN 2 END, t1.projected_in_service;
 !
 echo -n 'var tpit_projects = ' > tpit.js
-./node_modules/.bin/csvtojson out.csv >> tpit.js
+csvtojson out.csv >> tpit.js

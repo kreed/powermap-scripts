@@ -1,0 +1,23 @@
+{
+	"layers": {
+		"power_areas": { "minzoom": 0, "maxzoom": 14 },
+		"power_lines": { "minzoom": 0, "maxzoom": 14 }
+	},
+	"settings": {
+		"minzoom": 0,
+		"maxzoom": 14,
+		"basezoom": 14,
+		"include_ids": false,
+		"name": "Power Lines",
+		"version": "0.2",
+		"description": "Simple OSM power lines",
+		"compress": "gzip",
+		"bounding_box": [-106.5946102,25.8876769,-89.6398963,36.5183152],
+		"metadata": {
+			"json": { "vector_layers": [
+						{ "id": "power_areas",     "description": "Power areas",     "fields": {"name":"String","operator":"String","power":"String","voltage":"String","substation":"String","high_voltage":"String","frequency":"String"}},
+						{ "id": "power_lines",     "description": "Power lines",     "fields": {"name":"String","operator":"String","cables":"String","circuits":"String","power":"String","voltage":"String","wires":"String","high_voltage":"String","frequency":"String"}}
+					] }
+		}
+	}
+}
